@@ -1,0 +1,66 @@
+[2025-10-31T23:00:07.696+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:00:07.712+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:00:07.715+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:00:07.716+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:00:07.721+0700] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): evaluate_model> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:00:07.727+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1845) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:00:07.728+0700] {standard_task_runner.py:63} INFO - Started process 1847 to run task
+[2025-10-31T23:00:07.730+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'evaluate_model', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '390', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpewkjg0yw']
+[2025-10-31T23:00:07.732+0700] {standard_task_runner.py:91} INFO - Job 390: Subtask evaluate_model
+[2025-10-31T23:00:07.772+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:00:07.830+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='evaluate_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:00:07.832+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:00:07.833+0700] {logging_mixin.py:188} INFO - [Evaluate] Old model acc: 0.83, New model acc: 0.849
+[2025-10-31T23:00:07.833+0700] {logging_mixin.py:188} INFO - [Evaluate] ✅ New model is better. Marking for deployment.
+[2025-10-31T23:00:07.834+0700] {python.py:237} INFO - Done. Returned value was: update_model
+[2025-10-31T23:00:07.834+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:00:07.852+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=evaluate_model, execution_date=20251031T150000, start_date=20251031T160007, end_date=20251031T160007
+[2025-10-31T23:00:07.903+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:00:07.918+0700] {taskinstance.py:3482} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:00:07.919+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-31T23:20:34.308+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:20:34.326+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:20:34.331+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:20:34.331+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:20:34.338+0700] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): evaluate_model> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:20:34.342+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2631) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:20:34.344+0700] {standard_task_runner.py:63} INFO - Started process 2642 to run task
+[2025-10-31T23:20:34.345+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'evaluate_model', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '450', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpfqf7suqr']
+[2025-10-31T23:20:34.348+0700] {standard_task_runner.py:91} INFO - Job 450: Subtask evaluate_model
+[2025-10-31T23:20:34.396+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:20:34.460+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='evaluate_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:20:34.462+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:20:34.464+0700] {logging_mixin.py:188} INFO - [Evaluate] Old model acc: 0.83, New model acc: 0.811
+[2025-10-31T23:20:34.464+0700] {logging_mixin.py:188} INFO - [Evaluate] ❌ New model is worse. Skip update.
+[2025-10-31T23:20:34.464+0700] {python.py:237} INFO - Done. Returned value was: skip_update
+[2025-10-31T23:20:34.464+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:20:34.487+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=evaluate_model, execution_date=20251031T150000, start_date=20251031T162034, end_date=20251031T162034
+[2025-10-31T23:20:34.517+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:20:34.533+0700] {taskinstance.py:3482} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:20:34.534+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-31T23:53:40.772+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:53:40.788+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:53:40.791+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:53:40.791+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:53:40.798+0700] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): evaluate_model> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:53:40.804+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=12424) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:53:40.805+0700] {standard_task_runner.py:63} INFO - Started process 12427 to run task
+[2025-10-31T23:53:40.807+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'evaluate_model', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '508', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpk1rvh13s']
+[2025-10-31T23:53:40.810+0700] {standard_task_runner.py:91} INFO - Job 508: Subtask evaluate_model
+[2025-10-31T23:53:40.851+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.evaluate_model scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:53:40.910+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='evaluate_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:53:40.912+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:53:40.914+0700] {logging_mixin.py:188} INFO - [Evaluate] Old model acc: 0.83, New model acc: 0.87
+[2025-10-31T23:53:40.914+0700] {logging_mixin.py:188} INFO - [Evaluate] ✅ New model is better. Marking for deployment.
+[2025-10-31T23:53:40.914+0700] {python.py:237} INFO - Done. Returned value was: update_model
+[2025-10-31T23:53:40.914+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:53:40.933+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=evaluate_model, execution_date=20251031T150000, start_date=20251031T165340, end_date=20251031T165340
+[2025-10-31T23:53:40.980+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:53:40.998+0700] {taskinstance.py:3482} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:53:40.999+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

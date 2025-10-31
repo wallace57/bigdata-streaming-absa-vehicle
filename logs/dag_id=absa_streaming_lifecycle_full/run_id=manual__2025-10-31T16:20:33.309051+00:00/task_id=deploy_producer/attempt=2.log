@@ -1,0 +1,59 @@
+[2025-10-31T23:22:36.336+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:22:36.349+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.deploy_producer manual__2025-10-31T16:20:33.309051+00:00 [queued]>
+[2025-10-31T23:22:36.353+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.deploy_producer manual__2025-10-31T16:20:33.309051+00:00 [queued]>
+[2025-10-31T23:22:36.353+0700] {taskinstance.py:2303} INFO - Starting attempt 2 of 3
+[2025-10-31T23:22:36.358+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): deploy_producer> on 2025-10-31 16:20:33.309051+00:00
+[2025-10-31T23:22:36.363+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2882) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:22:36.364+0700] {standard_task_runner.py:63} INFO - Started process 2884 to run task
+[2025-10-31T23:22:36.366+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'deploy_producer', 'manual__2025-10-31T16:20:33.309051+00:00', '--job-id', '463', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmp0rxqxih1']
+[2025-10-31T23:22:36.368+0700] {standard_task_runner.py:91} INFO - Job 463: Subtask deploy_producer
+[2025-10-31T23:22:36.406+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.deploy_producer manual__2025-10-31T16:20:33.309051+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:22:36.465+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='deploy_producer' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T16:20:33.309051+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-31T16:20:33.309051+00:00'
+[2025-10-31T23:22:36.467+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:22:36.468+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T23:22:36.468+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'bash -c "timeout 45m bash /opt/***/projects/absa_streaming/scripts/run_producer.sh"']
+[2025-10-31T23:22:36.480+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T23:22:36.487+0700] {subprocess.py:93} INFO - [Producer] Starting Kafka Producer...
+[2025-10-31T23:22:36.629+0700] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-31T23:22:36.630+0700] {subprocess.py:93} INFO -   File "/opt/***/projects/absa_streaming/scripts/producer.py", line 10, in <module>
+[2025-10-31T23:22:36.630+0700] {subprocess.py:93} INFO -     from kafka import KafkaProducer
+[2025-10-31T23:22:36.630+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/__init__.py", line 23, in <module>
+[2025-10-31T23:22:36.631+0700] {subprocess.py:93} INFO -     from kafka.consumer import KafkaConsumer
+[2025-10-31T23:22:36.631+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/consumer/__init__.py", line 3, in <module>
+[2025-10-31T23:22:36.631+0700] {subprocess.py:93} INFO -     from kafka.consumer.group import KafkaConsumer
+[2025-10-31T23:22:36.631+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/consumer/group.py", line 13, in <module>
+[2025-10-31T23:22:36.631+0700] {subprocess.py:93} INFO -     from kafka.consumer.fetcher import Fetcher
+[2025-10-31T23:22:36.631+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/consumer/fetcher.py", line 19, in <module>
+[2025-10-31T23:22:36.632+0700] {subprocess.py:93} INFO -     from kafka.record import MemoryRecords
+[2025-10-31T23:22:36.632+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/record/__init__.py", line 1, in <module>
+[2025-10-31T23:22:36.632+0700] {subprocess.py:93} INFO -     from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+[2025-10-31T23:22:36.632+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/record/memory_records.py", line 27, in <module>
+[2025-10-31T23:22:36.632+0700] {subprocess.py:93} INFO -     from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+[2025-10-31T23:22:36.632+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/record/legacy_records.py", line 50, in <module>
+[2025-10-31T23:22:36.633+0700] {subprocess.py:93} INFO -     from kafka.codec import (
+[2025-10-31T23:22:36.633+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/codec.py", line 9, in <module>
+[2025-10-31T23:22:36.633+0700] {subprocess.py:93} INFO -     from kafka.vendor.six.moves import range
+[2025-10-31T23:22:36.633+0700] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+[2025-10-31T23:22:36.639+0700] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-31T23:22:36.640+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:22:36.650+0700] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 460, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-31T23:22:36.653+0700] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=absa_streaming_lifecycle_full, task_id=deploy_producer, execution_date=20251031T162033, start_date=20251031T162236, end_date=20251031T162236
+[2025-10-31T23:22:36.659+0700] {standard_task_runner.py:110} ERROR - Failed to execute job 463 for task deploy_producer (Bash command failed. The command returned a non-zero exit code 1.; 2884)
+[2025-10-31T23:22:36.701+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-31T23:22:36.717+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:22:36.718+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

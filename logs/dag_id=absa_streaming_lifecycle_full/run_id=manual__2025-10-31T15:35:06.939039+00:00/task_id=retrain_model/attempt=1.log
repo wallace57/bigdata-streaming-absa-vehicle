@@ -1,0 +1,29 @@
+[2025-10-31T22:35:08.167+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T22:35:08.182+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.retrain_model manual__2025-10-31T15:35:06.939039+00:00 [queued]>
+[2025-10-31T22:35:08.186+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.retrain_model manual__2025-10-31T15:35:06.939039+00:00 [queued]>
+[2025-10-31T22:35:08.186+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T22:35:08.193+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): retrain_model> on 2025-10-31 15:35:06.939039+00:00
+[2025-10-31T22:35:08.198+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1033) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T22:35:08.199+0700] {standard_task_runner.py:63} INFO - Started process 1039 to run task
+[2025-10-31T22:35:08.201+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'retrain_model', 'manual__2025-10-31T15:35:06.939039+00:00', '--job-id', '301', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmplny0zk4q']
+[2025-10-31T22:35:08.204+0700] {standard_task_runner.py:91} INFO - Job 301: Subtask retrain_model
+[2025-10-31T22:35:08.246+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.retrain_model manual__2025-10-31T15:35:06.939039+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T22:35:08.303+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='retrain_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:35:06.939039+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-31T15:35:06.939039+00:00'
+[2025-10-31T22:35:08.304+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T22:35:08.305+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T22:35:08.305+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "echo '[Train] Starting ABSA retraining...'; python3 /opt/***/projects/absa_streaming/scripts/train_retrain.py --output /opt/***/projects/absa_streaming/models/candidate_absa.pt --eval-log /opt/***/projects/absa_streaming/models/eval_result.json; echo '[Train] Done.'"]
+[2025-10-31T22:35:08.316+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T22:35:08.319+0700] {subprocess.py:93} INFO - [Train] Starting ABSA retraining...
+[2025-10-31T22:35:13.420+0700] {subprocess.py:93} INFO - 🧠 [train_retrain.py] Starting mock retraining...
+[2025-10-31T22:35:13.421+0700] {subprocess.py:93} INFO - ✅ [train_retrain.py] Done retraining. new_acc=0.824, best_acc=0.83
+[2025-10-31T22:35:13.421+0700] {subprocess.py:93} INFO - 📦 Model saved at: /opt/***/projects/absa_streaming/models/candidate_absa.pt
+[2025-10-31T22:35:13.421+0700] {subprocess.py:93} INFO - 📊 Eval log saved at: /opt/***/projects/absa_streaming/models/eval_result.json
+[2025-10-31T22:35:13.426+0700] {subprocess.py:93} INFO - [Train] Done.
+[2025-10-31T22:35:13.426+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-31T22:35:13.427+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T22:35:13.449+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=retrain_model, execution_date=20251031T153506, start_date=20251031T153508, end_date=20251031T153513
+[2025-10-31T22:35:13.496+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T22:35:13.513+0700] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T22:35:13.514+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

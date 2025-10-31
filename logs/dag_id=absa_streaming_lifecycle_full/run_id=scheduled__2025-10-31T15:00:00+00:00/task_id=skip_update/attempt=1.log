@@ -1,0 +1,72 @@
+[2025-10-31T23:00:08.824+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:00:08.841+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:00:08.846+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:00:08.846+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:00:08.853+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): skip_update> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:00:08.858+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1849) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:00:08.859+0700] {standard_task_runner.py:63} INFO - Started process 1853 to run task
+[2025-10-31T23:00:08.860+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'skip_update', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '391', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpo34owxhh']
+[2025-10-31T23:00:08.862+0700] {standard_task_runner.py:91} INFO - Job 391: Subtask skip_update
+[2025-10-31T23:00:08.905+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:00:08.967+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='skip_update' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:00:08.968+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:00:08.969+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T23:00:08.969+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "echo '[Skip] Model not improved, keeping current version.'"]
+[2025-10-31T23:00:08.981+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T23:00:08.983+0700] {subprocess.py:93} INFO - [Skip] Model not improved, keeping current version.
+[2025-10-31T23:00:08.983+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-31T23:00:08.984+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:00:09.005+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=skip_update, execution_date=20251031T150000, start_date=20251031T160008, end_date=20251031T160009
+[2025-10-31T23:00:09.033+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:00:09.047+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:00:09.048+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-31T23:20:35.577+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:20:35.605+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:20:35.615+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:20:35.620+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:20:35.629+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): skip_update> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:20:35.639+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2699) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:20:35.640+0700] {standard_task_runner.py:63} INFO - Started process 2721 to run task
+[2025-10-31T23:20:35.643+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'skip_update', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '452', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmp83pfqf4f']
+[2025-10-31T23:20:35.646+0700] {standard_task_runner.py:91} INFO - Job 452: Subtask skip_update
+[2025-10-31T23:20:35.700+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:20:35.774+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='skip_update' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:20:35.775+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:20:35.776+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T23:20:35.776+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "echo '[Skip] Model not improved, keeping current version.'"]
+[2025-10-31T23:20:35.791+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T23:20:35.793+0700] {subprocess.py:93} INFO - [Skip] Model not improved, keeping current version.
+[2025-10-31T23:20:35.794+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-31T23:20:35.794+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:20:35.818+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=skip_update, execution_date=20251031T150000, start_date=20251031T162035, end_date=20251031T162035
+[2025-10-31T23:20:35.860+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:20:35.873+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:20:35.875+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-31T23:53:42.476+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:53:42.495+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:53:42.500+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:53:42.500+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:53:42.508+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): skip_update> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:53:42.513+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=12438) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:53:42.515+0700] {standard_task_runner.py:63} INFO - Started process 12456 to run task
+[2025-10-31T23:53:42.517+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'skip_update', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '510', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpxc4b17f7']
+[2025-10-31T23:53:42.520+0700] {standard_task_runner.py:91} INFO - Job 510: Subtask skip_update
+[2025-10-31T23:53:42.576+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.skip_update scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:53:42.650+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='skip_update' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:53:42.651+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:53:42.652+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T23:53:42.653+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "echo '[Skip] Model not improved, keeping current version.'"]
+[2025-10-31T23:53:42.665+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T23:53:42.667+0700] {subprocess.py:93} INFO - [Skip] Model not improved, keeping current version.
+[2025-10-31T23:53:42.668+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-31T23:53:42.668+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:53:42.689+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=skip_update, execution_date=20251031T150000, start_date=20251031T165342, end_date=20251031T165342
+[2025-10-31T23:53:42.729+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:53:42.742+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:53:42.743+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

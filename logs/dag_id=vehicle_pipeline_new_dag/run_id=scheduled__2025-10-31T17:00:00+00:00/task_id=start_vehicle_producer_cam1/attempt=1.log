@@ -1,0 +1,30 @@
+[2025-11-01T01:00:01.664+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-01T01:00:01.683+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vehicle_pipeline_new_dag.start_vehicle_producer_cam1 scheduled__2025-10-31T17:00:00+00:00 [queued]>
+[2025-11-01T01:00:01.688+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vehicle_pipeline_new_dag.start_vehicle_producer_cam1 scheduled__2025-10-31T17:00:00+00:00 [queued]>
+[2025-11-01T01:00:01.688+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-11-01T01:00:01.697+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): start_vehicle_producer_cam1> on 2025-10-31 17:00:00+00:00
+[2025-11-01T01:00:01.704+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=35578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-01T01:00:01.707+0700] {standard_task_runner.py:63} INFO - Started process 35592 to run task
+[2025-11-01T01:00:01.711+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'vehicle_pipeline_new_dag', 'start_vehicle_producer_cam1', 'scheduled__2025-10-31T17:00:00+00:00', '--job-id', '539', '--raw', '--subdir', 'DAGS_FOLDER/vehicel_pipeline_new_dag.py', '--cfg-path', '/tmp/tmpgel1ss4o']
+[2025-11-01T01:00:01.721+0700] {standard_task_runner.py:91} INFO - Job 539: Subtask start_vehicle_producer_cam1
+[2025-11-01T01:00:01.833+0700] {task_command.py:426} INFO - Running <TaskInstance: vehicle_pipeline_new_dag.start_vehicle_producer_cam1 scheduled__2025-10-31T17:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-11-01T01:00:01.958+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='vehicle_pipeline_new_dag' AIRFLOW_CTX_TASK_ID='start_vehicle_producer_cam1' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T17:00:00+00:00'
+[2025-11-01T01:00:01.960+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-01T01:00:01.961+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-01T01:00:01.962+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'bash -c "timeout 45m bash /opt/***/projects/vehicle_count/scripts/run_producer_cam1.sh"']
+[2025-11-01T01:00:01.975+0700] {subprocess.py:86} INFO - Output:
+[2025-11-01T01:00:01.986+0700] {subprocess.py:93} INFO - [Producer-CAM1] 🚗 Starting Vehicle Kafka Producer (Camera 1)...
+[2025-11-01T01:01:38.949+0700] {subprocess.py:93} INFO - [Producer-CAM_1] 🔌 Kết nối Kafka broker tại kafka:9092 ...
+[2025-11-01T01:01:38.952+0700] {subprocess.py:93} INFO - [Producer-CAM_1] 🎥 Bắt đầu stream từ video1.mp4
+[2025-11-01T01:01:38.953+0700] {subprocess.py:93} INFO - [Producer-CAM_1] ✅ Video video1.mp4 kết thúc (438 frames).
+[2025-11-01T01:01:38.953+0700] {subprocess.py:93} INFO - [Producer-CAM_1] 📤 Gửi thành công 438 frames tới Kafka.
+[2025-11-01T01:01:38.954+0700] {subprocess.py:93} INFO - [Producer-CAM_1] 🏁 Hoàn tất gửi dữ liệu.
+[2025-11-01T01:01:39.033+0700] {subprocess.py:93} INFO - [Producer-CAM1] ✅ Completed successfully.
+[2025-11-01T01:01:39.034+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-11-01T01:01:39.036+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-01T01:01:39.079+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=vehicle_pipeline_new_dag, task_id=start_vehicle_producer_cam1, execution_date=20251031T170000, start_date=20251031T180001, end_date=20251031T180139
+[2025-11-01T01:01:39.146+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-11-01T01:01:39.173+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-01T01:01:39.174+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

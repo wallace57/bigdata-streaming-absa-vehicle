@@ -1,0 +1,102 @@
+[2025-10-31T23:02:02.444+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:02:02.473+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.deploy_producer scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:02:02.478+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.deploy_producer scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:02:02.479+0700] {taskinstance.py:2303} INFO - Starting attempt 2 of 3
+[2025-10-31T23:02:02.487+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): deploy_producer> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:02:02.496+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1939) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:02:02.498+0700] {standard_task_runner.py:63} INFO - Started process 1946 to run task
+[2025-10-31T23:02:02.499+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'deploy_producer', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '406', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmp52nvjw36']
+[2025-10-31T23:02:02.507+0700] {standard_task_runner.py:91} INFO - Job 406: Subtask deploy_producer
+[2025-10-31T23:02:02.611+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.deploy_producer scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:02:02.683+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='deploy_producer' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:02:02.685+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:02:02.685+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T23:02:02.686+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'bash -c "timeout 45m bash /opt/***/projects/absa_streaming/scripts/run_producer.sh"']
+[2025-10-31T23:02:02.697+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T23:02:02.708+0700] {subprocess.py:93} INFO - [Producer] Starting Kafka Producer...
+[2025-10-31T23:02:02.732+0700] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-31T23:02:02.733+0700] {subprocess.py:93} INFO -   File "/opt/***/projects/absa_streaming/scripts/producer.py", line 10, in <module>
+[2025-10-31T23:02:02.733+0700] {subprocess.py:93} INFO -     from kafka import KafkaProducer
+[2025-10-31T23:02:02.733+0700] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'kafka'
+[2025-10-31T23:02:02.736+0700] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-31T23:02:02.737+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:02:02.746+0700] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 460, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-31T23:02:02.749+0700] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=absa_streaming_lifecycle_full, task_id=deploy_producer, execution_date=20251031T150000, start_date=20251031T160202, end_date=20251031T160202
+[2025-10-31T23:02:02.756+0700] {standard_task_runner.py:110} ERROR - Failed to execute job 406 for task deploy_producer (Bash command failed. The command returned a non-zero exit code 1.; 1946)
+[2025-10-31T23:02:02.796+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-31T23:02:02.814+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:02:02.815+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-31T23:22:29.314+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:22:29.327+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.deploy_producer scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:22:29.330+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.deploy_producer scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:22:29.330+0700] {taskinstance.py:2303} INFO - Starting attempt 2 of 3
+[2025-10-31T23:22:29.336+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): deploy_producer> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:22:29.342+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2843) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:22:29.343+0700] {standard_task_runner.py:63} INFO - Started process 2845 to run task
+[2025-10-31T23:22:29.345+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'deploy_producer', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '459', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpk8d2vuxv']
+[2025-10-31T23:22:29.348+0700] {standard_task_runner.py:91} INFO - Job 459: Subtask deploy_producer
+[2025-10-31T23:22:29.388+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.deploy_producer scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:22:29.443+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='deploy_producer' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:22:29.445+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:22:29.445+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T23:22:29.446+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'bash -c "timeout 45m bash /opt/***/projects/absa_streaming/scripts/run_producer.sh"']
+[2025-10-31T23:22:29.456+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T23:22:29.465+0700] {subprocess.py:93} INFO - [Producer] Starting Kafka Producer...
+[2025-10-31T23:22:29.606+0700] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-31T23:22:29.607+0700] {subprocess.py:93} INFO -   File "/opt/***/projects/absa_streaming/scripts/producer.py", line 10, in <module>
+[2025-10-31T23:22:29.607+0700] {subprocess.py:93} INFO -     from kafka import KafkaProducer
+[2025-10-31T23:22:29.607+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/__init__.py", line 23, in <module>
+[2025-10-31T23:22:29.607+0700] {subprocess.py:93} INFO -     from kafka.consumer import KafkaConsumer
+[2025-10-31T23:22:29.608+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/consumer/__init__.py", line 3, in <module>
+[2025-10-31T23:22:29.608+0700] {subprocess.py:93} INFO -     from kafka.consumer.group import KafkaConsumer
+[2025-10-31T23:22:29.608+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/consumer/group.py", line 13, in <module>
+[2025-10-31T23:22:29.608+0700] {subprocess.py:93} INFO -     from kafka.consumer.fetcher import Fetcher
+[2025-10-31T23:22:29.608+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/consumer/fetcher.py", line 19, in <module>
+[2025-10-31T23:22:29.609+0700] {subprocess.py:93} INFO -     from kafka.record import MemoryRecords
+[2025-10-31T23:22:29.609+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/record/__init__.py", line 1, in <module>
+[2025-10-31T23:22:29.609+0700] {subprocess.py:93} INFO -     from kafka.record.memory_records import MemoryRecords, MemoryRecordsBuilder
+[2025-10-31T23:22:29.609+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/record/memory_records.py", line 27, in <module>
+[2025-10-31T23:22:29.609+0700] {subprocess.py:93} INFO -     from kafka.record.legacy_records import LegacyRecordBatch, LegacyRecordBatchBuilder
+[2025-10-31T23:22:29.609+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/record/legacy_records.py", line 50, in <module>
+[2025-10-31T23:22:29.610+0700] {subprocess.py:93} INFO -     from kafka.codec import (
+[2025-10-31T23:22:29.610+0700] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/kafka/codec.py", line 9, in <module>
+[2025-10-31T23:22:29.610+0700] {subprocess.py:93} INFO -     from kafka.vendor.six.moves import range
+[2025-10-31T23:22:29.610+0700] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'kafka.vendor.six.moves'
+[2025-10-31T23:22:29.615+0700] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-31T23:22:29.616+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:22:29.625+0700] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 460, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-31T23:22:29.628+0700] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=absa_streaming_lifecycle_full, task_id=deploy_producer, execution_date=20251031T150000, start_date=20251031T162229, end_date=20251031T162229
+[2025-10-31T23:22:29.635+0700] {standard_task_runner.py:110} ERROR - Failed to execute job 459 for task deploy_producer (Bash command failed. The command returned a non-zero exit code 1.; 2845)
+[2025-10-31T23:22:29.682+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-31T23:22:29.698+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:22:29.699+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

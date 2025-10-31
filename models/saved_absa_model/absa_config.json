@@ -1,0 +1,16 @@
+{
+  "model_name": "vinai/phobert-base",
+  "max_len": 128,
+  "num_aspects": 8,
+  "num_classes": 4,
+  "aspect_cols": [
+    "Price",
+    "Shipping",
+    "Outlook",
+    "Quality",
+    "Size",
+    "Shop_Service",
+    "General",
+    "Others"
+  ]
+}

@@ -1,0 +1,26 @@
+pyspark==3.5.1
+torch==2.3.0
+transformers==4.41.2
+kafka-python==2.0.1
+six==1.16.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+tqdm==4.67.1
+requests==2.31.0
+streamlit==1.39.0
+streamlit-autorefresh==1.0.1
+sqlalchemy==1.4.52
+psycopg2-binary==2.9.9
+plotly==5.24.1
+#wordcloud==1.9.3
+pillow==10.4.0
+redis==5.0.1
+# --- Computer Vision / Video Streaming ---
+# Bản này hỗ trợ Python 3.12 + NumPy 1.26.x, không cần GUI => không lỗi libGL
+opencv-python-headless==4.9.0.80
+
+# --- Optional (an toàn khi dùng Airflow) ---
+# Nếu bạn cần kết nối Spark từ Airflow DAGs
+pyarrow==15.0.2
+ultralytics==8.2.50

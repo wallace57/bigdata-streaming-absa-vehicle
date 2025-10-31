@@ -1,0 +1,43 @@
+[2025-10-31T22:40:27.771+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T22:40:27.785+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vehicle_pipeline_new_dag.start_vehicle_producer_cam2 manual__2025-10-31T15:36:24.038645+00:00 [queued]>
+[2025-10-31T22:40:27.788+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vehicle_pipeline_new_dag.start_vehicle_producer_cam2 manual__2025-10-31T15:36:24.038645+00:00 [queued]>
+[2025-10-31T22:40:27.789+0700] {taskinstance.py:2303} INFO - Starting attempt 3 of 3
+[2025-10-31T22:40:27.794+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): start_vehicle_producer_cam2> on 2025-10-31 15:36:24.038645+00:00
+[2025-10-31T22:40:27.799+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1414) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T22:40:27.800+0700] {standard_task_runner.py:63} INFO - Started process 1429 to run task
+[2025-10-31T22:40:27.801+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'vehicle_pipeline_new_dag', 'start_vehicle_producer_cam2', 'manual__2025-10-31T15:36:24.038645+00:00', '--job-id', '362', '--raw', '--subdir', 'DAGS_FOLDER/vehicel_pipeline_new_dag.py', '--cfg-path', '/tmp/tmp6mv7cupr']
+[2025-10-31T22:40:27.804+0700] {standard_task_runner.py:91} INFO - Job 362: Subtask start_vehicle_producer_cam2
+[2025-10-31T22:40:27.842+0700] {task_command.py:426} INFO - Running <TaskInstance: vehicle_pipeline_new_dag.start_vehicle_producer_cam2 manual__2025-10-31T15:36:24.038645+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T22:40:27.904+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='vehicle_pipeline_new_dag' AIRFLOW_CTX_TASK_ID='start_vehicle_producer_cam2' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:36:24.038645+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-31T15:36:24.038645+00:00'
+[2025-10-31T22:40:27.905+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T22:40:27.906+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-31T22:40:27.906+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'bash -c "timeout 45m bash /opt/***/projects/vehicle_count/scripts/run_producer_cam2.sh"']
+[2025-10-31T22:40:27.918+0700] {subprocess.py:86} INFO - Output:
+[2025-10-31T22:40:27.927+0700] {subprocess.py:93} INFO - [Producer-CAM2] 🏍️ Starting Vehicle Kafka Producer (Camera 2)...
+[2025-10-31T22:40:27.951+0700] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-31T22:40:27.952+0700] {subprocess.py:93} INFO -   File "/opt/***/projects/vehicle_count/scripts/vehicle_producer_single.py", line 13, in <module>
+[2025-10-31T22:40:27.952+0700] {subprocess.py:93} INFO -     import cv2
+[2025-10-31T22:40:27.953+0700] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'cv2'
+[2025-10-31T22:40:27.956+0700] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-31T22:40:27.957+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T22:40:27.966+0700] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 460, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-31T22:40:27.968+0700] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=vehicle_pipeline_new_dag, task_id=start_vehicle_producer_cam2, execution_date=20251031T153624, start_date=20251031T154027, end_date=20251031T154027
+[2025-10-31T22:40:27.974+0700] {standard_task_runner.py:110} ERROR - Failed to execute job 362 for task start_vehicle_producer_cam2 (Bash command failed. The command returned a non-zero exit code 1.; 1429)
+[2025-10-31T22:40:28.014+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-31T22:40:28.029+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T22:40:28.030+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

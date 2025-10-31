@@ -1,0 +1,66 @@
+[2025-10-31T23:00:08.824+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:00:08.841+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:00:08.845+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:00:08.846+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:00:08.852+0700] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): update_model> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:00:08.857+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1848) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:00:08.858+0700] {standard_task_runner.py:63} INFO - Started process 1852 to run task
+[2025-10-31T23:00:08.860+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'update_model', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '392', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmp197z0m1w']
+[2025-10-31T23:00:08.862+0700] {standard_task_runner.py:91} INFO - Job 392: Subtask update_model
+[2025-10-31T23:00:08.905+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:00:08.967+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='update_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:00:08.968+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:00:08.969+0700] {logging_mixin.py:188} INFO - [Update] Deploying new ABSA model...
+[2025-10-31T23:00:08.973+0700] {logging_mixin.py:188} INFO - [Update] ✅ Model updated → /opt/***/projects/absa_streaming/models/best_absa_hardshare.pt
+[2025-10-31T23:00:08.973+0700] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-31T23:00:08.973+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:00:08.983+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=update_model, execution_date=20251031T150000, start_date=20251031T160008, end_date=20251031T160008
+[2025-10-31T23:00:09.032+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:00:09.052+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:00:09.053+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-31T23:20:35.646+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:20:35.663+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:20:35.667+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:20:35.668+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:20:35.677+0700] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): update_model> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:20:35.683+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2700) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:20:35.685+0700] {standard_task_runner.py:63} INFO - Started process 2722 to run task
+[2025-10-31T23:20:35.687+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'update_model', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '454', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpgrlwc6kq']
+[2025-10-31T23:20:35.690+0700] {standard_task_runner.py:91} INFO - Job 454: Subtask update_model
+[2025-10-31T23:20:35.747+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:20:35.812+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='update_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:20:35.813+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:20:35.813+0700] {logging_mixin.py:188} INFO - [Update] Deploying new ABSA model...
+[2025-10-31T23:20:35.819+0700] {logging_mixin.py:188} INFO - [Update] ✅ Model updated → /opt/***/projects/absa_streaming/models/best_absa_hardshare.pt
+[2025-10-31T23:20:35.819+0700] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-31T23:20:35.819+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:20:35.829+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=update_model, execution_date=20251031T150000, start_date=20251031T162035, end_date=20251031T162035
+[2025-10-31T23:20:35.861+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:20:35.879+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:20:35.880+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-31T23:53:42.454+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-31T23:53:42.472+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:53:42.476+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [queued]>
+[2025-10-31T23:53:42.477+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-31T23:53:42.484+0700] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): update_model> on 2025-10-31 15:00:00+00:00
+[2025-10-31T23:53:42.490+0700] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=12437) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-31T23:53:42.491+0700] {standard_task_runner.py:63} INFO - Started process 12450 to run task
+[2025-10-31T23:53:42.493+0700] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'absa_streaming_lifecycle_full', 'update_model', 'scheduled__2025-10-31T15:00:00+00:00', '--job-id', '509', '--raw', '--subdir', 'DAGS_FOLDER/absa_streaming_lifecycle_full.py', '--cfg-path', '/tmp/tmpybjapi9h']
+[2025-10-31T23:53:42.496+0700] {standard_task_runner.py:91} INFO - Job 509: Subtask update_model
+[2025-10-31T23:53:42.543+0700] {task_command.py:426} INFO - Running <TaskInstance: absa_streaming_lifecycle_full.update_model scheduled__2025-10-31T15:00:00+00:00 [running]> on host f7bb1ad77e89
+[2025-10-31T23:53:42.626+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='absa_streaming_lifecycle_full' AIRFLOW_CTX_TASK_ID='update_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-31T15:00:00+00:00'
+[2025-10-31T23:53:42.628+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-31T23:53:42.629+0700] {logging_mixin.py:188} INFO - [Update] Deploying new ABSA model...
+[2025-10-31T23:53:42.634+0700] {logging_mixin.py:188} INFO - [Update] ✅ Model updated → /opt/***/projects/absa_streaming/models/best_absa_hardshare.pt
+[2025-10-31T23:53:42.634+0700] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-31T23:53:42.634+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-31T23:53:42.644+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=absa_streaming_lifecycle_full, task_id=update_model, execution_date=20251031T150000, start_date=20251031T165342, end_date=20251031T165342
+[2025-10-31T23:53:42.665+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-31T23:53:42.679+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-31T23:53:42.680+0700] {local_task_job_runner.py:222} INFO - ::endgroup::
