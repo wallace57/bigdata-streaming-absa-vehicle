@@ -3099,3 +3099,80 @@
 [2025-11-01T01:33:30.792+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:33:30.792+0700] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-11-01T01:33:30.803+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:33:30.803+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
 [2025-11-01T01:33:30.812+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.054 seconds
+[2025-11-01T01:34:01.045+0700] {processor.py:161} INFO - Started process (PID=27866) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:34:01.046+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:34:01.047+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:01.047+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:34:01.054+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:34:01.071+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:01.071+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:34:01.083+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:01.083+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:34:01.091+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.052 seconds
+[2025-11-01T01:34:31.284+0700] {processor.py:161} INFO - Started process (PID=27927) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:34:31.286+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:34:31.287+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:31.286+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:34:31.294+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:34:31.315+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:31.314+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:34:31.328+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:31.328+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:34:31.339+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.062 seconds
+[2025-11-01T01:35:01.544+0700] {processor.py:161} INFO - Started process (PID=27988) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:35:01.545+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:35:01.546+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:01.546+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:35:01.555+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:35:01.576+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:01.576+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:35:01.591+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:01.591+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:35:01.602+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.071 seconds
+[2025-11-01T01:35:31.903+0700] {processor.py:161} INFO - Started process (PID=28049) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:35:31.903+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:35:31.904+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:31.904+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:35:31.912+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:35:31.932+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:31.931+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:35:31.945+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:31.945+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:35:31.955+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.060 seconds
+[2025-11-01T01:36:02.208+0700] {processor.py:161} INFO - Started process (PID=28110) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:36:02.209+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:36:02.210+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:02.209+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:36:02.216+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:36:02.232+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:02.232+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:36:02.243+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:02.243+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:36:02.252+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.050 seconds
+[2025-11-01T01:36:32.371+0700] {processor.py:161} INFO - Started process (PID=28171) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:36:32.371+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:36:32.372+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:32.372+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:36:32.379+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:36:32.396+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:32.396+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:36:32.408+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:32.407+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:36:32.416+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.052 seconds
+[2025-11-01T01:37:02.506+0700] {processor.py:161} INFO - Started process (PID=28232) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:37:02.507+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:37:02.507+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:02.507+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:37:02.516+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:37:02.534+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:02.534+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:37:02.547+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:02.547+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:37:02.555+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.057 seconds
+[2025-11-01T01:37:32.784+0700] {processor.py:161} INFO - Started process (PID=28293) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:37:32.785+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:37:32.785+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:32.785+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:37:32.792+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:37:32.809+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:32.809+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:37:32.820+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:32.820+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:37:32.828+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.050 seconds
+[2025-11-01T01:38:03.010+0700] {processor.py:161} INFO - Started process (PID=28354) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:38:03.011+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:38:03.011+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:03.011+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:38:03.019+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:38:03.036+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:03.036+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:38:03.048+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:03.048+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:38:03.056+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.053 seconds
+[2025-11-01T01:38:33.274+0700] {processor.py:161} INFO - Started process (PID=28415) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:38:33.275+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:38:33.276+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:33.276+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:38:33.284+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:38:33.301+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:33.301+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:38:33.313+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:33.313+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:38:33.322+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.055 seconds
+[2025-11-01T01:39:03.551+0700] {processor.py:161} INFO - Started process (PID=28476) to work on /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:39:03.552+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicel_pipeline_new_dag.py for tasks to queue
+[2025-11-01T01:39:03.553+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:39:03.553+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:39:03.561+0700] {processor.py:840} INFO - DAG(s) 'vehicle_pipeline_new_dag' retrieved from /opt/airflow/dags/vehicel_pipeline_new_dag.py
+[2025-11-01T01:39:03.579+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:39:03.579+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:39:03.591+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:39:03.591+0700] {dag.py:3954} INFO - Setting next_dagrun for vehicle_pipeline_new_dag to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:39:03.601+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicel_pipeline_new_dag.py took 0.058 seconds

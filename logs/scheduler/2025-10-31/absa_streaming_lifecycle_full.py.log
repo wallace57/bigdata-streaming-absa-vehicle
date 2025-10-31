@@ -3112,3 +3112,73 @@
 [2025-11-01T01:33:32.979+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:33:32.979+0700] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-11-01T01:33:32.994+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:33:32.994+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
 [2025-11-01T01:33:33.004+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.071 seconds
+[2025-11-01T01:34:03.212+0700] {processor.py:161} INFO - Started process (PID=27870) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:34:03.213+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:34:03.213+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:03.213+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:34:03.222+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:34:03.241+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:03.241+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:34:03.254+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:03.254+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:34:03.265+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.061 seconds
+[2025-11-01T01:34:33.485+0700] {processor.py:161} INFO - Started process (PID=27931) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:34:33.486+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:34:33.487+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:33.487+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:34:33.497+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:34:33.517+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:33.517+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:34:33.530+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:34:33.530+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:34:33.540+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.064 seconds
+[2025-11-01T01:35:03.749+0700] {processor.py:161} INFO - Started process (PID=27992) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:35:03.750+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:35:03.751+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:03.751+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:35:03.761+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:35:03.782+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:03.782+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:35:03.795+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:03.795+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:35:03.805+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.064 seconds
+[2025-11-01T01:35:34.090+0700] {processor.py:161} INFO - Started process (PID=28053) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:35:34.092+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:35:34.093+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:34.092+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:35:34.105+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:35:34.125+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:34.125+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:35:34.140+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:35:34.140+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:35:34.151+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.070 seconds
+[2025-11-01T01:36:04.372+0700] {processor.py:161} INFO - Started process (PID=28114) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:36:04.373+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:36:04.374+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:04.373+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:36:04.383+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:36:04.402+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:04.402+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:36:04.414+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:04.414+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:36:04.423+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.060 seconds
+[2025-11-01T01:36:34.536+0700] {processor.py:161} INFO - Started process (PID=28175) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:36:34.537+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:36:34.538+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:34.537+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:36:34.547+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:36:34.565+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:34.565+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:36:34.577+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:36:34.577+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:36:34.586+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.059 seconds
+[2025-11-01T01:37:04.698+0700] {processor.py:161} INFO - Started process (PID=28236) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:37:04.699+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:37:04.700+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:04.699+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:37:04.709+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:37:04.727+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:04.727+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:37:04.738+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:04.738+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:37:04.746+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.060 seconds
+[2025-11-01T01:37:34.949+0700] {processor.py:161} INFO - Started process (PID=28297) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:37:34.950+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:37:34.951+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:34.950+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:37:34.960+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:37:34.979+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:34.978+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:37:34.990+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:37:34.990+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:37:34.998+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.058 seconds
+[2025-11-01T01:38:05.178+0700] {processor.py:161} INFO - Started process (PID=28358) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:38:05.179+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:38:05.180+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:05.179+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:38:05.189+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:38:05.208+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:05.208+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:38:05.220+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:05.220+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:38:05.229+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.060 seconds
+[2025-11-01T01:38:35.464+0700] {processor.py:161} INFO - Started process (PID=28419) to work on /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:38:35.465+0700] {processor.py:830} INFO - Processing file /opt/airflow/dags/absa_streaming_lifecycle_full.py for tasks to queue
+[2025-11-01T01:38:35.466+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:35.466+0700] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:38:35.476+0700] {processor.py:840} INFO - DAG(s) 'absa_streaming_lifecycle_full' retrieved from /opt/airflow/dags/absa_streaming_lifecycle_full.py
+[2025-11-01T01:38:35.494+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:35.494+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-11-01T01:38:35.505+0700] {logging_mixin.py:188} INFO - [2025-11-01T01:38:35.505+0700] {dag.py:3954} INFO - Setting next_dagrun for absa_streaming_lifecycle_full to 2025-10-31 18:00:00+00:00, run_after=2025-10-31 19:00:00+00:00
+[2025-11-01T01:38:35.515+0700] {processor.py:183} INFO - Processing /opt/airflow/dags/absa_streaming_lifecycle_full.py took 0.061 seconds
